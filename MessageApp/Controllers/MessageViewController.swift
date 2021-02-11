@@ -32,6 +32,10 @@ class MessageViewController: UIViewController {
         tableView.register(UINib(nibName: "MessageCellTableViewCell", bundle: nil), forCellReuseIdentifier: "ReusableCell")
         
     }
+    
+    @IBAction func sendMessagePressed(_ sender: UIButton) {
+    }
+    
     @IBAction func logOutPressed(_ sender: UIBarButtonItem) {
         
         let firebaseAuth = Auth.auth()
