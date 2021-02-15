@@ -12,4 +12,5 @@ struct MessageModel {
     
     let sender: String //email adress of message sender
     let body: String
+    
 }

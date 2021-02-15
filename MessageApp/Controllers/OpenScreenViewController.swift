@@ -14,7 +14,15 @@ class ViewController: UIViewController {
     @IBOutlet weak var loginButtonLabel: UIButton!
     @IBOutlet weak var registerButtonLabel: UIButton!
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.isNavigationBarHidden = true
+    }
     
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        navigationController?.isNavigationBarHidden = false
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -21,6 +21,7 @@ class RegisterViewController: UIViewController {
         super.viewDidLoad()
 
         appNameLabel.text = "🥷NINJCHAT"
+        title = "🥷NINJCHAT"
         
         let swipe = UISwipeGestureRecognizer(target: self, action: #selector(handleSwipe(_:)))
         swipe.direction = .right
