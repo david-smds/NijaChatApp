@@ -8,6 +8,7 @@
 import UIKit
 import CLTypingLabel
 import Firebase
+import NotificationBannerSwift
 
 class RegisterViewController: UIViewController {
 
@@ -16,7 +17,6 @@ class RegisterViewController: UIViewController {
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet var swipeLabel: UISwipeGestureRecognizer!
     
-    @IBOutlet weak var errorLabelText: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -40,21 +40,20 @@ class RegisterViewController: UIViewController {
         if let email = emailTextField.text, let password = passwordTextField.text {
             Auth.auth().createUser(withEmail: email, password: password) { authResult, error in
                 if let e = error {
-                    self.errorLabelText.text = e.localizedDescription
-                    //self.performSegue(withIdentifier: "goForError", sender: self)
-                }
-            else {
+                   
+                  let banner = NotificationBanner(title: "Error", subtitle: e.localizedDescription, style: .danger)
+                    banner.show(bannerPosition: .top)
+                    banner.onSwipeUp = {
+                        banner.isHidden = true
+                    }
+                    //self.errorLabelText.text = e.localizedDescription
+                } else {
             self.performSegue(withIdentifier: "RegisterSucceed", sender: self)
+                }
             }
         }
     }
-   
-}
     
-    //override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-      //     if segue.identifier == "goForError" {
-        //       let destinationVC = segue.destination as! PopUpViewController
-          //  destinationVC.errorText =
-           //}
-       //}
+    
+    
 }

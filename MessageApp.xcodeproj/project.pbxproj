@@ -14,6 +14,7 @@
 		6FE1C1E425D54F52006D8041 /* MessageCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE1C1E225D54F52006D8041 /* MessageCellTableViewCell.swift */; };
 		6FE1C1E525D54F52006D8041 /* MessageCellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6FE1C1E325D54F52006D8041 /* MessageCellTableViewCell.xib */; };
 		6FE1C1EB25D7F473006D8041 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 6FE1C1EA25D7F473006D8041 /* IQKeyboardManagerSwift */; };
+		6FE1C1F425DA8BD5006D8041 /* NotificationBannerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 6FE1C1F325DA8BD5006D8041 /* NotificationBannerSwift */; };
 		6FF8E55325CD84EA00C38B50 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FF8E55225CD84EA00C38B50 /* AppDelegate.swift */; };
 		6FF8E55525CD84EA00C38B50 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FF8E55425CD84EA00C38B50 /* SceneDelegate.swift */; };
 		6FF8E55725CD84EA00C38B50 /* OpenScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FF8E55625CD84EA00C38B50 /* OpenScreenViewController.swift */; };
@@ -74,6 +75,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D8B2EE660DFC76FF0B37D958 /* Pods_MessageApp.framework in Frameworks */,
+				6FE1C1F425DA8BD5006D8041 /* NotificationBannerSwift in Frameworks */,
 				6FE1C1EB25D7F473006D8041 /* IQKeyboardManagerSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -216,6 +218,7 @@
 			name = MessageApp;
 			packageProductDependencies = (
 				6FE1C1EA25D7F473006D8041 /* IQKeyboardManagerSwift */,
+				6FE1C1F325DA8BD5006D8041 /* NotificationBannerSwift */,
 			);
 			productName = MessageApp;
 			productReference = 6FF8E54F25CD84EA00C38B50 /* MessageApp.app */;
@@ -290,6 +293,7 @@
 			mainGroup = 6FF8E54625CD84E900C38B50;
 			packageReferences = (
 				6FE1C1E925D7F472006D8041 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
+				6FE1C1F225DA8BD5006D8041 /* XCRemoteSwiftPackageReference "NotificationBanner" */,
 			);
 			productRefGroup = 6FF8E55025CD84EA00C38B50 /* Products */;
 			projectDirPath = "";
@@ -729,6 +733,14 @@
 				minimumVersion = 6.5.6;
 			};
 		};
+		6FE1C1F225DA8BD5006D8041 /* XCRemoteSwiftPackageReference "NotificationBanner" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Daltron/NotificationBanner";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.6;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -736,6 +748,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 6FE1C1E925D7F472006D8041 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
 			productName = IQKeyboardManagerSwift;
+		};
+		6FE1C1F325DA8BD5006D8041 /* NotificationBannerSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6FE1C1F225DA8BD5006D8041 /* XCRemoteSwiftPackageReference "NotificationBanner" */;
+			productName = NotificationBannerSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

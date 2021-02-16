@@ -126,15 +126,6 @@
                                     <action selector="registerButtonPressed:" destination="gFD-1C-0uZ" eventType="touchUpInside" id="QUE-cY-jFD"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O55-qA-dKc">
-                                <rect key="frame" x="107" y="435" width="200" height="100"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="Lmb-RP-eC4"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <color key="textColor" red="0.60706090930000001" green="0.12991166109999999" blue="0.1188395694" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="evw-JJ-Ssd"/>
                         <color key="backgroundColor" red="0.9427984356880188" green="0.9483296275138855" blue="0.98098772764205933" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -144,11 +135,8 @@
                             <constraint firstItem="CwE-Db-xPr" firstAttribute="centerX" secondItem="tEW-CJ-z4n" secondAttribute="centerX" id="5gP-Wk-wZj"/>
                             <constraint firstItem="tEW-CJ-z4n" firstAttribute="leading" secondItem="evw-JJ-Ssd" secondAttribute="leading" constant="62" id="FNG-A1-wk9"/>
                             <constraint firstItem="CwE-Db-xPr" firstAttribute="centerX" secondItem="Jf7-Bv-jPL" secondAttribute="centerX" id="JyF-dy-lmQ"/>
-                            <constraint firstItem="O55-qA-dKc" firstAttribute="centerX" secondItem="CwE-Db-xPr" secondAttribute="centerX" id="Onc-rX-gTY"/>
-                            <constraint firstItem="O55-qA-dKc" firstAttribute="top" secondItem="CwE-Db-xPr" secondAttribute="bottom" constant="53.5" id="TYQ-RV-hxn"/>
                             <constraint firstItem="evw-JJ-Ssd" firstAttribute="bottom" secondItem="tEW-CJ-z4n" secondAttribute="bottom" constant="14" id="bas-V4-Wfk"/>
                             <constraint firstItem="CwE-Db-xPr" firstAttribute="leading" secondItem="evw-JJ-Ssd" secondAttribute="leading" constant="82" id="hpQ-4a-Ndh"/>
-                            <constraint firstItem="O55-qA-dKc" firstAttribute="leading" secondItem="evw-JJ-Ssd" secondAttribute="leading" constant="107" id="tTQ-zg-IUP"/>
                             <constraint firstItem="evw-JJ-Ssd" firstAttribute="bottom" secondItem="tEW-CJ-z4n" secondAttribute="bottom" constant="14" id="x7k-2d-e8d"/>
                         </constraints>
                         <connections>
@@ -159,7 +147,6 @@
                     <connections>
                         <outlet property="appNameLabel" destination="tEW-CJ-z4n" id="P7m-TD-enp"/>
                         <outlet property="emailTextField" destination="dIC-oa-YE4" id="LLj-Xh-Ugz"/>
-                        <outlet property="errorLabelText" destination="O55-qA-dKc" id="e2n-wg-mXf"/>
                         <outlet property="passwordTextField" destination="Jf7-Bv-jPL" id="M7X-Wa-UU9"/>
                         <outlet property="swipeLabel" destination="pI8-LP-z6t" id="EhQ-rI-02i"/>
                         <segue destination="Eh1-G9-lB2" kind="show" identifier="RegisterSucceed" id="TTT-hJ-1rv"/>
@@ -216,12 +203,6 @@
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="highlightedColor" name="AccentColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ocX-dG-Ea1">
-                                <rect key="frame" x="107" y="171" width="200" height="100"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <color key="textColor" red="0.60706090930000001" green="0.12991166109999999" blue="0.1188395694" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Dix-Uy-i8O"/>
                         <color key="backgroundColor" red="0.9427984356880188" green="0.9483296275138855" blue="0.98098772764205933" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -231,11 +212,7 @@
                             <constraint firstItem="owz-PX-fcc" firstAttribute="leading" secondItem="Dix-Uy-i8O" secondAttribute="leading" constant="82" id="Afd-hy-HaB"/>
                             <constraint firstItem="Df3-A6-Saa" firstAttribute="centerX" secondItem="uZI-lw-U6Z" secondAttribute="centerX" id="HqY-U2-Tiq"/>
                             <constraint firstItem="Df3-A6-Saa" firstAttribute="leading" secondItem="Dix-Uy-i8O" secondAttribute="leading" constant="62" id="MX7-M9-vcJ"/>
-                            <constraint firstItem="ocX-dG-Ea1" firstAttribute="centerX" secondItem="Df3-A6-Saa" secondAttribute="centerX" id="Zv0-yD-pqz"/>
-                            <constraint firstItem="Df3-A6-Saa" firstAttribute="top" secondItem="ocX-dG-Ea1" secondAttribute="bottom" constant="65" id="aHD-72-Vx8"/>
                             <constraint firstItem="owz-PX-fcc" firstAttribute="top" secondItem="WOe-xH-xWj" secondAttribute="bottom" constant="55" id="fMe-rL-47g"/>
-                            <constraint firstItem="ocX-dG-Ea1" firstAttribute="top" secondItem="Dix-Uy-i8O" secondAttribute="top" constant="83" id="pen-YR-EgC"/>
-                            <constraint firstItem="ocX-dG-Ea1" firstAttribute="leading" secondItem="Dix-Uy-i8O" secondAttribute="leading" constant="107" id="pnv-CE-uw4"/>
                             <constraint firstItem="Df3-A6-Saa" firstAttribute="top" secondItem="Dix-Uy-i8O" secondAttribute="top" constant="248" id="sah-jE-9WM"/>
                             <constraint firstItem="Dix-Uy-i8O" firstAttribute="bottom" secondItem="owz-PX-fcc" secondAttribute="bottom" constant="62.5" id="x7Q-rn-3ej"/>
                         </constraints>
@@ -247,7 +224,6 @@
                     <connections>
                         <outlet property="appNameLabel" destination="Df3-A6-Saa" id="Yvc-OM-mwd"/>
                         <outlet property="emailTextField" destination="uZI-lw-U6Z" id="tJe-5X-Ed5"/>
-                        <outlet property="errorLabel" destination="ocX-dG-Ea1" id="ddx-Rn-Itc"/>
                         <outlet property="passwordTextField" destination="WOe-xH-xWj" id="qLZ-k2-Umr"/>
                         <outlet property="swipeGestureLabel" destination="9nW-zY-eIP" id="32H-im-LMu"/>
                         <segue destination="Eh1-G9-lB2" kind="show" identifier="LoginSucceed" id="uEg-SR-bRa"/>
@@ -356,7 +332,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="uEg-SR-bRa"/>
+        <segue reference="TTT-hJ-1rv"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="paperplane.fill" catalog="system" width="128" height="118"/>

@@ -8,13 +8,13 @@
 import UIKit
 import Firebase
 import CLTypingLabel
+import NotificationBannerSwift
 
 class LoginViewController: UIViewController {
 
     @IBOutlet var swipeGestureLabel: UISwipeGestureRecognizer!
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
-    @IBOutlet weak var errorLabel: UILabel!
     @IBOutlet var appNameLabel: CLTypingLabel!
     
     
@@ -41,12 +41,17 @@ class LoginViewController: UIViewController {
         
         Auth.auth().signIn(withEmail: email, password: password) { authResult, error in
             if let e = error {
-                self.errorLabel.text = e.localizedDescription
+                
+                let banner = NotificationBanner(title: "Error", subtitle: e.localizedDescription, style: .danger)
+                  banner.show(bannerPosition: .top)
+                  banner.onSwipeUp = {
+                      banner.isHidden = true
+                  }
+                //self.errorLabel.text = e.localizedDescription
             } else {
                 self.performSegue(withIdentifier: "LoginSucceed", sender: self)
+                }
             }
-            
-        }
         }
     }
     
